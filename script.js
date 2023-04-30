@@ -1,75 +1,55 @@
-let x=1
-console.log(x)
+//<p id = "hello" class ="bye" name = "hellohiby">Para</p>
 
-for(let i=0 ; i<5 ; i++){//1//2//3//4//5
-    console.log(i)//0,1,2,3,4
+let para = document.querySelector('p')
+let byId = document.querySelector('#hello')
+let byClass = document.querySelector('.bye')
+let byName = document.querySelector('p[name="hellohiby"]')
+
+console.log(para)
+console.log(byId)
+console.log(byClass)
+console.log(byName)
+console.log('---------------------')
+let i = document.getElementById('hello')
+console.log(i)
+
+
+let liList = document.querySelectorAll('li')
+console.log(liList)
+
+for(let i = 0 ; i<liList.length ; i++){
+    liList[i].style.color ="red"
 }
 
+let htmlC = document.getElementsByTagName('li')
+console.log(htmlC)
 
-for(let i=2 ; i<=20 ; i=i+2){
-    console.log(i)
-}
+// // liList
+// // htmlC
 
+let htmlClassCollection = document.getElementsByClassName('fruit')
+let nodeListCollection = document.querySelectorAll('.fruit')
 
-for(let y=1 ; y<=3 ; y++){
-    console.log(y)
-}
+console.log(htmlClassCollection)
+console.log(nodeListCollection)
 
+// // document.getElementById()
+// // document.getElementsByClassName()
+// // document.getElementsByTagName()
+let q1q = document.getElementsByName('a')
+console.log(q1q)
 
-for(let i=0 ; i<5 ; i++){
-    console.log(i)
-}
+// //Javascript
 
+// //class and id
 
-for(let i=1 ; i<=10 ; i++){
-    console.log(i)
-}
+// // class
+// // <h3 class = 'three'>headingThree</h3>
 
+let g = document.querySelector('.three')
+console.log(g)
+g.classList.add('four')
+g.classList.remove('three')
+g.classList.toggle('four')
+g.classList.toggle('four')
 
-
-for(let i=1 ; i<=3 ; i++){
-    console.log('hello')
-}
-
-for(let i=10 ; i>=1 ; i--){
-    console.log(i)
-}
-
-for(let i=5 ; i>=1 ; i--){
-    console.log(i)
-}
-
-for(let i=0 ; i<=5 ; i++){
-    if (i==3){
-        break;
-    }
-    console.log(i)
-}
-
-for(let i=1 ; i<=5 ; i++){ 
-    console.log(i) 
-        if(i == 3){
-            break;
-        }
-    }
-
-for(let i=0 ; i<=5 ; i++){
-    if(i==3){
-        continue
-    }
-    console.log(i)
-}
-
-for(let i=5 ; i>=1 ; i--){
-    if(i==3){
-        break;
-    }
-    console.log(i)
-}
-
-for(let i=5 ; i>=1 ; i--){
-    if(i==3){
-        continue
-    }
-    console.log(i)
-}
